@@ -1,4 +1,4 @@
-
+//Just a comment to see if push is working
 var paragraph = document.getElementById('demo');
 var letters = document.getElementsByClassName('letter');
 var apostropheMap = new Map();
