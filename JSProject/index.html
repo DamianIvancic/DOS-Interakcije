@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="1920" height="1080"></canvas>
+
+<script src = "drawAnswers.js"></script>
+
+<script>
+    // JavaScript code goes here
+
+    writeQuestion();
+    function writeQuestion()
+    {
+        var toInsert = document.createElement("div");
+        toInsert.innerHTML = "Find the opposites".fontsize(5);
+        toInsert.style.position = "absolute";
+        toInsert.style.top = "20px";
+        toInsert.style.left = "300px";
+        toInsert.style.textAlign = "left";
+        toInsert.style.width = "100%";
+        document.body.appendChild(toInsert);
+    }
+</script>
+
+    <body onload="init();">
+        <input type="button" value="Reset" id="clr" width = "100" onclick = "erase()" style="position:absolute;top:10%;right:15%;width:100px;height:60px;">
+        <input type="button" value="Blonde hair" id="1" size="1" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:10%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Blue eyes" id="2"size="2" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:20%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Patient" id="3" size="3" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:30%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Hard working" id="4" size="4" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:40%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Tall" id="5" size="5" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:50%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Curly hair" id="6" size="6" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:60%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Long hair" id="7" size="7" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:70%;left:15%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Brown eyes" id="8" size="2" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:10%;left:40%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Short" id="9" size="5" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:20%;left:40%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Straight hair" id="10" size="6" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:30%;left:40%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Short hair" id="11" size="7" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:40%;left:40%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Impatient" id="12" size="3" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:50%;left:40%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Lazy" id="13" size="4" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:60%;left:40%;width:100px;height:40px;background-color:aqua;">
+        <input type="button" value="Black hair" id="14" size="1" width = "100" onclick = "reply_click(this.size, this.id)" style="position:absolute;top:70%;left:40%;width:100px;height:40px;background-color:aqua;">
+
+</body>
+</html>
